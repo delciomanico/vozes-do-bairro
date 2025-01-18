@@ -1,0 +1,340 @@
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Associação Vozes do Bairro</title>
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/doar/styles.css">
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container p-3">
+      <a class="navbar-brand" href="#">Vozes do Bairro</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#quem-somos">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#valores">Valores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#estrutura">Estrutura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-light ms-2" href="pagamento.html">Doar Agora</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 text-white">Associação Vozes do Bairro</h1>
+      <p class="lead text-white">Transformando vidas em Angola através da solidariedade</p>
+      <a href="pagamento.html" class="btn btn-lg btn-primary">Faça sua Doação</a>
+    </div>
+  </header>
+
+  <!-- Quem Somos -->
+  <section id="quem-somos" class="py-5" style="padding: 150px 0 !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="section-title">Quem Somos</h2>
+          <p>A Associação Vozes do Bairro é uma organização comunitária que atua em prol do desenvolvimento social e humano nas comunidades de Angola. Nosso foco está em promover a inclusão, fortalecer as capacidades locais e criar oportunidades que gerem impacto positivo e sustentável.</p>
+          
+          <h3>Visão</h3>
+          <p>Ser referência em transformação social, promovendo comunidades fortes, autônomas e resilientes.</p>
+          
+          <h3>Missão</h3>
+          <p>Transformar vidas através de projetos de educação, cultura, cidadania e solidariedade, conectando recursos às necessidades reais da comunidade.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="impact-numbers text-center">
+            <div class="row">
+              <div class="col-6 mb-4">
+                <div class="impact-card">
+                  <i class="bi bi-people"></i>
+                  <h4>1000+</h4>
+                  <p>Pessoas Impactadas</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="impact-card">
+                  <i class="bi bi-heart"></i>
+                  <h4>50+</h4>
+                  <p>Projetos Realizados</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="impact-card">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>10+</h4>
+                  <p>Comunidades</p>
+                </div>
+              </div>
+              <div class="col-6 mb-4">
+                <div class="impact-card">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                  <h4>100+</h4>
+                  <p>Voluntários</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valores -->
+  <section id="valores" class="py-5 bg-light " style="padding: 150px 0 !important;">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Nossos Valores</h2>
+      <div class="row">
+        <div class="col-md-3 ">
+          <div class="valor-card">
+            <i class="bi bi-people-fill"></i>
+            <h4>Solidariedade</h4>
+            <p>Promovemos a união e o apoio mútuo</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="valor-card">
+            <i class="bi bi-brightness-high"></i>
+            <h4>Transparência</h4>
+            <p>Agimos com integridade em todas as ações</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="valor-card">
+            <i class="bi bi-universal-access"></i>
+            <h4>Inclusão</h4>
+            <p>Garantimos que todas as vozes sejam ouvidas e valorizadas</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="valor-card">
+            <i class="bi bi-tree"></i>
+            <h4>Sustentabilidade</h4>
+            <p>Trabalhamos para soluções duradouras e responsáveis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doação -->
+  <section id="contato" class="py-5 text-white" style="background-color: #e6992b; padding: 100px 0 !important;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>Entre Em Contacto</h2>
+          <p>Sua contribuição ajuda a transformar vidas e fortalece nossas comunidades.</p>
+        </div>
+        <div class="col-md-6">
+          <form id="formDoacao" class="donation-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nome Completo" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="E-mail" required>
+            </div>
+            <div class="mb-3">
+              <select class="form-control" required>
+                <option value="">Selecione o valor da doação</option>
+                <option value="20">20 AOA</option>
+                <option value="50">50 AOA</option>
+                <option value="100">100 AOA</option>
+                <option value="outro">Outro valor</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-light w-100">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Estrutura -->
+  <section id="estrutura" class="team-section py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <h2 class="section-title">Estrutura Organizacional </h2>
+          <p class="lead">Conheça os profissionais dedicados que fazem a diferença em nossa organização</p>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Membro da Equipe 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="member-img">
+              <svg class="avatar" viewBox="0 0 100 100">
+                <circle cx="50" cy="35" r="25" fill="#6c757d"/>
+                <circle cx="50" cy="100" r="40" fill="#6c757d"/>
+              </svg>
+              <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Afonso Bongui </h4>
+              <span>Presidente</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Membro da Equipe 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="member-img">
+              <svg class="avatar" viewBox="0 0 100 100">
+                <circle cx="50" cy="35" r="25" fill="#6c757d"/>
+                <circle cx="50" cy="100" r="40" fill="#6c757d"/>
+              </svg>
+              <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Norberta Garcia </h4>
+              <span>Vice-Presidente</span>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Membro da Equipe 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="member-img">
+              <svg class="avatar" viewBox="0 0 100 100">
+                <circle cx="50" cy="35" r="25" fill="#6c757d"/>
+                <circle cx="50" cy="100" r="40" fill="#6c757d"/>
+              </svg>
+              <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Nsumbo Joa</h4>
+              <span>Presidente do Conselho</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Membro da Equipe 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="team-member">
+            <div class="member-img">
+              <svg class="avatar" viewBox="0 0 100 100">
+                <circle cx="50" cy="35" r="25" fill="#6c757d"/>
+                <circle cx="50" cy="100" r="40" fill="#6c757d"/>
+              </svg>
+              <div class="social-icons">
+                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>David Moma</h4>
+              <span>Dep de Comunicação</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contato -->
+  <footer class="footer-section">
+    <div class="footer-top py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="footer-info">
+              <h3>Vozes do Bairro</h3>
+              <p>Transformando Vidas em Angola Atraves da Solidariedade.</p>
+              <div class="social-links mt-4">
+                <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 mb-4">
+            <h3>Links Úteis</h3>
+            <ul class="footer-links">
+              <li>
+                <a  href="index.html#quem-somos">Quem Somos</a>
+              </li>
+              <li>
+                <a  href="index.html#valores">Valores</a>
+              </li>
+              <li>
+                <a  href="index.html#estrutura">Estrutura</a>
+              </li>
+              <li>
+                <a  href="index.html#contato">Contato</a>
+              </li>
+              <li>
+                <a href="pagamento.html">Doar Agora</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h3>Nossos Serviços</h3>
+            <ul class="footer-links">
+              <li><a href="#">Arrecadacão de Bens</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4">
+            <h3>Contato</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> Luanda - Angola </p>
+              <p><i class="fas fa-phone"></i> +244 926-283-434</p>
+              <p><i class="fas fa-envelope"></i> geral@associacaovozesdobairro.com </p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </footer>
+
+  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
