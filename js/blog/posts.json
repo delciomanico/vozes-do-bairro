@@ -6,7 +6,7 @@
       "author": "Vozes do Bairro",
       "readTime": "5",
       "category": "Cultura",
-      "link": "https://example.com/festival-primavera",
+      "link": "#",
       "img": "./img/blog/5.jpg"
     },
     {
@@ -15,7 +15,7 @@
       "author": "Vozes do Bairro",
       "readTime": "3",
       "category": "Meio Ambiente",
-      "link": "https://example.com/limpeza-parque",
+      "link": "#",
        "img": "./img/blog/16.jpg"
     },
     {
@@ -24,7 +24,7 @@
       "author": "Vozes do Bairro",
       "readTime": "6",
       "category": "Sustentabilidade",
-      "link": "https://example.com/feira-sustentavel",
+      "link": "#",
        "img": "./img/blog/15.jpg"
     }
   ]
