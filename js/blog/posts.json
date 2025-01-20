@@ -7,7 +7,7 @@
       "readTime": "5",
       "category": "Cultura",
       "link": "https://example.com/festival-primavera",
-      "img": "/img/blog/5.jpg"
+      "img": "./img/blog/5.jpg"
     },
     {
       "title": "Multidão de Limpeza no Parque Central",
@@ -16,7 +16,7 @@
       "readTime": "3",
       "category": "Meio Ambiente",
       "link": "https://example.com/limpeza-parque",
-       "img": "/img/blog/16.jpg"
+       "img": "./img/blog/16.jpg"
     },
     {
       "title": "Feira de Agricultura Sustentável",
@@ -25,7 +25,7 @@
       "readTime": "6",
       "category": "Sustentabilidade",
       "link": "https://example.com/feira-sustentavel",
-       "img": "/img/blog/15.jpg"
+       "img": "./img/blog/15.jpg"
     }
   ]
 }
