@@ -1,0 +1,211 @@
+/* Featured Post Styles */
+.featured-post {
+  position: relative;
+  margin-bottom: 4rem;
+  background-color: #000;
+}
+
+.featured-post-wrapper {
+  position: relative;
+}
+
+.featured-image {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.featured-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 2rem 0;
+  z-index: 2;
+}
+
+.featured-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.featured-content .lead {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Newsletter Section Styles */
+.newsletter-section {
+  margin-top: 5rem;
+  padding: 4rem 0;
+}
+
+.newsletter-section .card {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border: none;
+  overflow: hidden;
+}
+
+.newsletter-section .card-body {
+  padding: 3rem;
+}
+
+.newsletter-icon {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+
+.subscription-form .form-control {
+  border-radius: 30px 0 0 30px;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #e9ecef;
+  border-right: none;
+}
+
+.subscription-form .btn {
+  border-radius: 0 30px 30px 0;
+  padding: 0.8rem 1.5rem;
+}
+
+/* Blog Cards Styles */
+.blog-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card-image {
+  height: 350px;
+  overflow: hidden;
+}
+
+.blog-card .card-body {
+  padding: 2rem;
+}
+
+.blog-card .card-title {
+  color: #1a1a1a;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.blog-card .card-text {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.card-meta .badge {
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.post-meta {
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.blog-content-left {
+  grid-column: 1;
+}
+
+.blog-content-right {
+  grid-column: 2;
+}
+
+/* Load More Button Styles */
+#loadMoreBtn {
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#loadMoreBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .featured-content h1 {
+    font-size: 2rem;
+  }
+  
+  .featured-image {
+    height: 400px;
+  }
+  
+  .newsletter-section .card-body {
+    padding: 2rem;
+  }
+  
+  .subscription-form .input-group {
+    flex-direction: column;
+  }
+  
+  .subscription-form .form-control,
+  .subscription-form .btn {
+    border-radius: 30px;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .blog-card-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .blog-content-left,
+  .blog-content-right {
+    grid-column: 1;
+  }
+  
+  .blog-card-image {
+    height: 300px;
+  }
+}

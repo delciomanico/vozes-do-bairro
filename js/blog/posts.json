@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "title": "Festival Cultural de Primavera",
+      "content": "Uma celebração anual com música, dança e comida típica, reunindo a comunidade para promover a diversidade cultural e fortalecer os laços locais.",
+      "author": "Vozes do Bairro",
+      "readTime": "5",
+      "category": "Cultura",
+      "link": "https://example.com/festival-primavera",
+      "img": "/img/blog/5.jpg"
+    },
+    {
+      "title": "Multidão de Limpeza no Parque Central",
+      "content": "Venha participar do nosso esforço conjunto para deixar o parque mais limpo e bonito. Traga seus amigos e familiares para contribuir com a preservação do meio ambiente.",
+      "author": "Vozes do Bairro",
+      "readTime": "3",
+      "category": "Meio Ambiente",
+      "link": "https://example.com/limpeza-parque",
+       "img": "/img/blog/16.jpg"
+    },
+    {
+      "title": "Feira de Agricultura Sustentável",
+      "content": "Descubra produtos orgânicos e artesanais, conheça produtores locais e participe de workshops sobre práticas agrícolas sustentáveis.",
+      "author": "Vozes do Bairro",
+      "readTime": "6",
+      "category": "Sustentabilidade",
+      "link": "https://example.com/feira-sustentavel",
+       "img": "/img/blog/15.jpg"
+    }
+  ]
+}
