@@ -13,9 +13,9 @@ async function loadPosts(start = 0, limit = 2) {
 // Create post HTML element
 function createPostElement(post) {
   const postElement = document.createElement('div');
-  postElement.className = 'col-6 mb-4';
+  postElement.className = 'col-6 mb-4 ';
   postElement.innerHTML = `
-  <div class="card blog-card h-100">
+  <div class="card blog-card h-100" >
             <div class="blog-card-image">
                 <img  alt="" src="${post.img}" width="100%" height="100%">
             </div>
