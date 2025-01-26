@@ -17,7 +17,7 @@ function createPostElement(post) {
   postElement.innerHTML = `
   <div class="card blog-card h-100" >
             <div class="blog-card-image">
-                <img  alt="" src="${post.img}" width="100%" height="100%">
+                <img class="img-cover" alt="" src="${post.img}" width="100%" height="100%">
             </div>
             <div class="card-body">
               <div class="card-meta mb-2">

@@ -10,11 +10,6 @@
   <script src="https://js.stripe.com/v3/"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./css/blog/styles.css">
-  <style>
-    .img-cover{
-      object-fit: cover;
-    }
-  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -52,75 +47,57 @@
     </div>
   </nav>
 
-  <section class="featured-post mb-5">
-    <div class="featured-post-wrapper">
-      <div class="featured-image">
-        <img src="./img/blog/13.jpg" alt="" width="100%" height="500px">
-      </div>
-      <div class="featured-content">
-        <div class="container">
-          <span class="badge bg-primary mb-2">Destaque</span>
-          <h1>Campanha de Doação de Alimentos</h1>
-          <p class="lead">Ajude famílias carentes participando da nossa campanha de arrecadação de alimentos não perecíveis. Toda contribuição faz a diferença.</p>
-          <div class="post-meta">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23dee2e6'/%3E%3C/svg%3E" 
-                 class="rounded-circle me-2" alt="author" width="40" height="40">
-            <span>Por Vozes do bairro • 12 min de leitura • 15 Out 2023</span>
-          </div>
-          <a href="#" class="btn btn-primary mt-3">Ler artigo completo</a>
+  <div class="container-fluid gallery-container">
+    <div class="row">
+        <div class="col-12 text-center my-5">
+            <h1 class="display-4 py-5">Galeria</h1>
+            <p class="lead text-muted">Momentos que transformam vidas</p>
         </div>
-      </div>
     </div>
-  </section>
+
+    
+    
+  </div>
   <!-------------main content ....-->
-  <main class="container-fluid py-5">
+  <main class="container py-5">
     <!-- Featured Post Section -->
-  
-    <div class="container">
-      <!-- Blog Posts Section -->
-      <section class="blog-section">
-        <div class="section-header mb-4">
-          <h2 class="text-center">Últimas Publicações</h2>
-          <p class="text-center text-muted">Confira nossos artigos mais recentes</p>
-        </div>
-        <div class="row ">
-          <!-- Posts will be loaded here dynamically -->
-        </div>
-        
-        <!-- Load More Button -->
-        <div class="text-center mt-4 mb-5">
-          <button class="btn btn-primary btn-lg" id="loadMoreBtn">
-            <span>Carregar mais posts</span>
-            <i class="bi bi-arrow-down-circle ms-2"></i>
-          </button>
-        </div>
-      </section>
-  
-      <!-- Newsletter Signup Section -->
-      <section class="newsletter-section">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-body text-center">
-                <div class="newsletter-icon mb-3">
-                  <i class="bi bi-envelope-paper-heart"></i>
-                </div>
-                <h2 class="card-title">Fique por dentro das novidades</h2>
-                <p class="card-text">Inscreva-se para receber conteúdo exclusivo e atualizações semanais!</p>
-                <form class="subscription-form" id="newsletterForm">
-                  <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Seu melhor email" required>
-                    <button class="btn btn-primary" type="submit">
-                      Inscrever-se <i class="bi bi-arrow-right"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    <div class="row justify-content-center">
+      <!-- Define uma largura fixa e altura proporcional -->
+      <style>
+        .gallery-img {
+          max-width: 100%;
+          height: 400px; /* Ajuste conforme necessário */
+          object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+        }
+      </style>
+    <div class="d-flex flex-wrap justify-content-center">
+      <a href="./img/blog/1.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/1.jpg" class="img-fluid gallery-img">
+      </a>
+      <a href="./img/blog/2.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/2.jpg" class="img-fluid gallery-img">
+      </a>
+      <a href="./img/blog/3.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/3.jpg" class="img-fluid gallery-img">
+      </a>
+      <a href="./img/blog/4.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/4.jpg" class="img-fluid gallery-img">
+      </a>
+      <a href="./img/blog/5.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/5.jpg" class="img-fluid gallery-img">
+      </a>
+      <a href="./img/blog/6.jpg" data-toggle="lightbox" data-gallery="hidden-images" class="m-2">
+        <img src="./img/blog/6.jpg" class="img-fluid gallery-img">
+
+
+        <!-- elements not showing, use data-remote or data-src-->
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="/img/blog/13.jpg" data-title="Hidden item 1"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="/img/blog/14.jpg" data-title="Hidden item 1"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="/img/blog/15.jpg" data-title="Hidden item 1"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="/img/blog/16.jpg" data-title="Hidden item 1"></div>
+        <div data-toggle="lightbox" data-gallery="hidden-images" data-src="/img/blog/12.jpg" data-title="Hidden item 1"></div>
+      </div>
+      </div>
   </main>
 
   <footer class="footer-section">
@@ -185,9 +162,10 @@
 <!-- Custom JS -->
 <!--<script src="https://cdn.emailjs.com/dist/email.min.js"></script>-->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script defer src="./js/blog/script.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
+
+<script defer src="./js/galeria/index.bundle.min.js"></script>
+  <script  src="./js/bootstrap.js"></script>
+  <script  src="./js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
